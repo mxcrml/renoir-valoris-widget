@@ -2,10 +2,6 @@
    Bloc "Prix de l'immobilier a Nancy" — Renoir & Valoris
    Integration dans Netty (bloc Widget), une seule ligne :
    <div id="rv-prix"></div><script src="https://cdn.jsdelivr.net/gh/mxcrml/renoir-valoris-widget@main/rv-prix-nancy.js"></script>
-
-   MISE A JOUR DES CHIFFRES : modifiez simplement les valeurs
-   ci-dessous (nombres entiers, en euros par m2), la date, et
-   l'URL de votre page d'estimation.
    ========================================================= */
 (function () {
   "use strict";
