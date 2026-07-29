@@ -77,7 +77,7 @@
       '<p class="rv-prix__caption">Donn\u00e9es publiques de march\u00e9 \u00b7 Mise \u00e0 jour le ' + DATE_MAJ + '</p>' +
       '<div class="rv-prix__hero">' +
         '<div>' +
-          '<p class="rv-prix__hero-label">Prix moyen au m\u00b2 \u2014 tous types de biens</p>' +
+          '<p class="rv-prix__hero-label">Prix moyen au m\u00b2 – tous types de biens</p>' +
           '<p class="rv-prix__hero-value">' + euros(PRIX.tousBiens) + '<span class="rv-prix__hero-unit"> / m\u00b2</span></p>' +
         '</div>' +
         '<div class="rv-prix__hero-alt">' +
