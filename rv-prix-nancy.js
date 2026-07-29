@@ -12,7 +12,7 @@
 
   /* ---------- A METTRE A JOUR ---------- */
   var DATE_MAJ = "29/07/2026";
-  var ESTIMATION_URL = "/estimez-votre-bien,107"; /* <-- REMPLACEZ par l'URL de votre page d'estimation */
+  var ESTIMATION_URL = "/estimez-votre-bien,107";
   var PRIX = {
     tousBiens: 2381,
     appartements: { moyen: 2329, bas: 1491, haut: 3115 },
