@@ -1,11 +1,7 @@
 /* =========================================================
-   Bloc "Prix de l'immobilier a Nancy" v2 — Renoir & Valoris
+   Bloc "Prix de l'immobilier a Nancy" v3 - Renoir & Valoris
    Integration dans Netty, une seule ligne a coller :
-   <div id="rv-prix"></div><script src="https://cdn.jsdelivr.net/gh/mxcrml/renoir-valoris-widget@main/rv-prix-nancy-v2.js"></script>
-
-   MISE A JOUR : modifiez simplement la date et les chiffres
-   ci-dessous (nombres entiers, en euros par m2). Les jauges
-   et la fourchette constatee se recalculent automatiquement.
+   <div id="rv-prix"></div><script src="https://cdn.jsdelivr.net/gh/mxcrml/renoir-valoris-widget@main/rv-prix-nancy-v3.js"></script>
    ========================================================= */
 (function () {
   "use strict";
@@ -54,7 +50,6 @@
     return s.replace(/[\u202f\u00a0 ]/g, "\u00a0") + "\u00a0\u20ac";
   }
 
-  /* Position du point sur la jauge : (moyen - bas) / (haut - bas) */
   function pct(d) {
     var p = ((d.moyen - d.bas) / (d.haut - d.bas)) * 100;
     return Math.max(0, Math.min(100, p)).toFixed(1);
@@ -102,8 +97,6 @@
   function init() {
     var mount = document.getElementById("rv-prix");
 
-    /* Si aucune div n'est fournie, on se cree un point de montage
-       a l'emplacement du script */
     if (!mount) {
       mount = document.createElement("div");
       mount.id = "rv-prix";
@@ -114,12 +107,10 @@
       }
     }
 
-    /* Anti double-initialisation */
     if (mount.getAttribute("data-rv-init") === "1") { return; }
     mount.setAttribute("data-rv-init", "1");
     mount.classList.add("rv-prix");
 
-    /* Styles (une seule fois par page) */
     if (!document.getElementById("rv-prix-style")) {
       var style = document.createElement("style");
       style.id = "rv-prix-style";
