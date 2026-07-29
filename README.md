@@ -1,2 +1,2 @@
 # renoir-valoris-widget
-Script pour livre blanc renoir et valoris
+Script JS pour widget à intégrer sur le site Netty de renoiretvaloris.com
