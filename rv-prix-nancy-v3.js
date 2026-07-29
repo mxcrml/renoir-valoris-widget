@@ -74,7 +74,7 @@
     var fHaut = Math.max(PRIX.appartements.haut, PRIX.maisons.haut);
     return '' +
       '<h2 class="rv-prix__title">Prix de l\u2019immobilier au m\u00b2 <strong>\u00e0 Nancy</strong></h2>' +
-      '<p class="rv-prix__caption">Donn\u00e9es publiques de march\u00e9 \u00b7 Mise \u00e0 jour le ' + DATE_MAJ + '</p>' +
+      '<p class="rv-prix__caption">Donn\u00e9es publiques de march\u00e9 – Mise \u00e0 jour le ' + DATE_MAJ + '</p>' +
       '<div class="rv-prix__hero">' +
         '<div>' +
           '<p class="rv-prix__hero-label">Prix moyen au m\u00b2 – tous types de biens</p>' +
